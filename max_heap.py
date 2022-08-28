@@ -4,7 +4,7 @@ class MaxHeap:
     self.count = 0
 
   # HEAP HELPER METHODS
-  # DO NOT CHANGE!
+  
   def parent_idx(self, idx):
     return idx // 2
 
@@ -64,7 +64,6 @@ class MaxHeap:
       idx = larger_child_idx
     print("HEAP RESTORED! {0}".format(self.heap_list))
     print("") 
-
 
   def get_larger_child_idx(self, idx):
     if self.right_child_idx(idx) > self.count:
